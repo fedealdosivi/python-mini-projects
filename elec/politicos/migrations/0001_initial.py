@@ -32,6 +32,8 @@ class Migration(migrations.Migration):
                 ('nombre', models.CharField(max_length=50)),
                 ('apellido', models.CharField(max_length=50)),
                 ('email', models.EmailField(max_length=254)),
+                ('cargo', models.ForeignKey(to='politicos.cargo')),
+                ('partido', models.ForeignKey(to='politicos.partido')),
             ],
         ),
     ]

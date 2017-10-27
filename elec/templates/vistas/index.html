@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block titulo %}{% endblock %}
+
+{% block contenido %}
+			
+		Partidos anotados:<br /><br />
+		<table border=1>
+			<tr><td>Descripcion</td><td>Fecha</td></tr>
+			{% for p in partidos %}
+			<tr>
+				<td>{{  }}</td>
+				<td>{{  }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+		
+{% endblock %}
